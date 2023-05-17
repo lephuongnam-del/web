@@ -5,7 +5,7 @@ from flask import render_template, session, request, redirect, url_for, flash, m
 from azure.servicebus import Message
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
-import logging
+# import logging
 
 @app.route('/')
 def index():

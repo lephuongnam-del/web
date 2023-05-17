@@ -1,4 +1,4 @@
-# import os
+import os
 from flask import Flask, render_template, url_for, request, redirect
 # from flask_sqlalchemy import SQLAlchemy 
 # from azure.servicebus import QueueClient
@@ -14,4 +14,4 @@ app = Flask(__name__)
 
 # db = SQLAlchemy(app)
 
-# from . import routes
+from . import routes

@@ -1,11 +1,11 @@
 # from app import app, db, queue_client
 from app import app
-from datetime import datetime
-from app.models import Attendee, Conference, Notification
+# from datetime import datetime
+# from app.models import Attendee, Conference, Notification
 from flask import render_template, session, request, redirect, url_for, flash, make_response, session
-from azure.servicebus import Message
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+# from azure.servicebus import Message
+# from sendgrid import SendGridAPIClient
+# from sendgrid.helpers.mail import Mail
 # import logging
 
 @app.route('/')

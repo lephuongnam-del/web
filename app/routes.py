@@ -17,3 +17,9 @@ def attendees():
 @app.route('/Notifications')
 def notifications():
     return render_template('notifications.html', notifications=[ { 'id': 1, 'status': 'Notifications submitted', 'message': '', 'submitted_date': '2020-05-07 00:00:00-04', 'completed_date': '2020-05-07 00:00:00-04', 'subject': '' }, { 'id': 2, 'status': 'Notifications submitted', 'message': 'uyt', 'submitted_date': '2020-05-07 18:00:38.573856-04', 'completed_date': '2020-05-07 18:00:39.124435-04', 'subject': 'Welcome Email' }, { 'id': 3, 'status': 'Notified 5 attendees', 'message': 'Welcome Email', 'submitted_date': '2020-05-07 18:14:04.239065-04', 'completed_date': '2020-05-07 18:14:04.271981-04', 'subject': 'Welcome Email' } , { 'id': 4, 'status': 'Notifications submitted', 'message': 'New Speaker Added: Dr Daniel Shu', 'submitted_date': '2020-05-07 23:24:00.504412-04', 'completed_date': '2020-05-07 00:00:00-04', 'subject': 'New Speaker Added: Dr Daniel Shu' } ])
+
+
+
+@app.route('/Notification', methods=['POST', 'GET'])
+def notification():
+        return render_template('notification.html')
